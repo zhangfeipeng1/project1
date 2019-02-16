@@ -1,0 +1,598 @@
+body{
+    background:#1c1c1c;
+    color:#fff;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+} 
+a:focus{
+    text-decoration:none;
+    border:0px solid transparent;
+    color:#fff;
+}
+/*服务块内容*/
+.title_div{
+    margin:5% 0;
+}
+
+.tab_list{
+    max-width:1180px;
+    width:100%;
+    margin:0 auto;
+    height: 245px;
+    overflow: hidden;
+}
+.tab_list div h1{
+    font-size:50px;
+    margin-left:50%;
+    color:#999;
+    display: none;
+}
+.tab_list div h1:first-child{
+    display: block;
+}
+/*文字*/
+.tab_left p{
+    color:#999;
+    overflow: hidden;
+}
+
+.flex_div{
+    position:relative;
+}
+.flex_div .tab_left{
+    position:absolute;
+    top:0;
+    left:0;
+    display: none;
+
+}
+.flex_div  .tab_left:first-child{
+    display: block;
+}
+
+/*右边的箭头*/
+.box_left{
+    width:60px;
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+    background:#333;
+}
+.box_left i{
+    font-size:20px;
+}
+.box_left a{
+    font-size:20px;
+    color:#fff;
+}
+
+
+
+/*列表*/
+.item_div{
+    padding:1%;
+}
+.item_a {
+    display:inline-block;
+    width:100%;
+    height:100%;
+    color:#777;
+    margin:2% 0;
+}
+.item_a .thumbnail{
+    margin-bottom: -20px;
+    -webkit-transition: all .2s linear;
+}
+.item_a .thumbnail:hover{
+    background:#222;
+    color:#fff;
+    -webkit-transition: all .2s linear;
+}
+.item_active {
+    background:#9e9e9e;
+    color:#fff;
+    background:#222;
+    tansition:all .5s;
+}
+/*房子导航列表*/
+.List_ul{
+    width:50%;
+    list-style:none;
+    display:flex;
+    flex-flow:row wrap;
+    margin:0 auto;
+    /*text-align: center;*/
+}
+.List_ul li{
+    width:20%;
+    margin:2% 0;
+    padding:2% 0;
+    text-align:center;
+    transition:all .3s;
+    cursor:pointer;
+    color:#7F7F7F;
+}
+.List_ul li:hover , .PorListUl {
+    background:#0b0b0b;
+    transition:all .3s;
+    color:#fff;
+}
+/*房子列表*/
+.house_div{
+    position:relative;
+    margin-top:8%;
+    cursor:pointer;
+}
+.house_div div{
+    position:absolute;
+    top:0; left:0;
+    opacity: 0;
+    width:100%;
+    height:100%;
+    padding:20% 2% 0;
+    transition:all .3s;
+}
+.house_div:hover div{
+    background:#000;
+    opacity: 0.7;
+    transition:all .3s;
+}
+.house_div div h1{
+    position:absolute;
+    top:2%;right:2%;
+    margin:0;
+    padding:0;
+}
+/*合作伙伴*/
+.partner_div:hover div{
+    background:#333;
+    transition:all .3s;
+}
+.partner_div div {
+    margin-top:10%;
+    background: #232323;
+    transition:all .3s;
+}
+
+/*关于我们*/
+.about_div{
+    display: inline-block;
+    margin:5%;
+    height:400px;
+    width:100%;
+    position:relative;
+}
+.about_div:hover .about_hide{
+    top:0;
+    background:#222;
+    opacity:0.4;
+    width:106%;
+    display: block;
+    transition:all .5s;
+}
+.about_hide{
+    opacity:0;
+    display:none;
+    transition:all .5s;
+    height:337px;
+    width:100%;
+    position:absolute;
+    top:-400px;left:0;
+}
+.about_hide i{
+    margin:22% 45%;
+    transition:all .5s;
+    padding:5%;
+    font-size: 20px;
+    color:#ddd;
+    border:1px solid #ddd;
+    border-radius: 50px;
+}
+
+.about_div .btn{
+    width:40%;
+    padding:3%;
+    color:#ddd;
+    border:1px solid #777;
+    transition:all .5s;
+    transfrom:scaleX(0.4);
+}
+.about_div .btn:hover{
+    background:#333;
+    color:#fff;
+    border:1px solid #333;
+    transfrom:scaleX(3);
+    transition:all .5s;
+}
+/*数字*/
+.num_div{
+    margin:3% 0;
+    padding:2% 0;
+}
+.num_div b{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+/*团队精英*/
+a.thumbnail:hover{
+    text-decoration: none;
+    border-color: #000;
+}
+a.thumbnail{
+    position:relative;
+}
+a.thumbnail .img_bottom{
+    display: inline-block;
+    opacity: 0;
+    width:97%;
+    height:70%;
+    position:absolute;
+    top:1%;left:1%;
+    transition:all .5s;
+}
+a.thumbnail:hover .img_bottom{
+    border:1px solid #fff;
+    opacity: 1;
+    transform: scale(0.9);
+    transition:all .5s;
+    color:#fff;
+}
+a.thumbnail .caption{
+    color:#666;
+    transition:all .5s;
+}
+a.thumbnail:hover .img_top  .caption{
+    color:#999;
+    transition:all .5s;
+}
+.img_top  img{
+    text-align: center;
+    display:inline-block;
+}
+.img_cross{
+    padding-top:2%;
+    padding-left:6%;
+    margin:0 40%;
+    margin-top:35%;
+    font-size: 40px;
+    color:#fff;
+    border:1px solid #222;
+    border-radius: 5px;
+    background:#222;
+    opacity: 0.8;
+    transition:all .5s;
+}
+a.thumbnail:hover .img_cross{
+    margin-top:25%;
+    transition:all .5s;
+}
+
+
+.news_img:hover .caption{
+    color:#fff;
+}
+.a_hidden_block{
+    display:inline-block;
+
+}
+.scope_div{
+    cursor:pointer;
+}
+.scope_div .col-md-5 , .scope_div  .top_big_div{
+    padding:2% 0;
+    position:relative;
+}
+.scope_div .col-md-5 a , .scope_div  .top_big_div a{
+    display: inline-block;
+    width:100%;
+    height:82%;
+}
+.scope_div:hover .a_hidden_block{
+    cursor:pointer;
+    transform: scale(0.9);
+    border:1px solid #fff;
+    padding:23% 0;
+    opacity:1;
+}
+.scope_div   .a_hidden_block{
+    margin-top:7%;
+    transition:all .5s;
+    border:1px solid transparent;
+    position:absolute;
+    top:0;left:0;
+    display: inline-block;
+    width:100%;
+    height:100%;
+    padding:23% 0;
+    font-size:40px;
+}
+.scope_div   .a_hidden_block  span{
+    opacity: 0;
+    transition:all .5s;
+}
+.scope_div:hover .a_hidden_block span{
+
+    display: inline-block;
+    width: 14%;
+    height:100%;
+    opacity:1;
+    color:#888;
+    border-radius:5px;
+    background:#222;
+}
+
+.scope_div .col-md-7{
+    padding-top:10%;
+    color:#666;
+    transition:all .5s;
+}
+.scope_div .col-md-7 p , .scope_div .bottom_big_div p{
+    width:90%;
+    height:20px;
+    overflow: hidden;
+    color:#666;
+}
+
+.scope_div:hover .col-md-7 ,  .bottom_big_div , .bottom_big_div p{
+    color:#fff;
+    transition:all .5s;
+}
+.scope_div .col-md-7 a ,  .bottom_big_div a{
+    color:#666;
+}
+.scope_div  .glyphicon{
+    transition:all .5s;
+}
+.scope_div:hover .col-md-7 .glyphicon {
+    padding-left:9%;
+    color:#fff;
+    transition:all .5s;
+}
+.scope_div:hover .bottom_big_div  .glyphicon{
+    padding-left:9%;
+    color:#fff;
+    transition:all .5s;
+}
+
+
+.WeCartDiv{
+    margin-top:3%;
+    margin-bottom: 20%;
+}
+.input_text{
+    width:100%;
+    color:#fff;
+}
+.input_text>input{
+    width:100%;
+    margin-top:2%;
+    border:1px solid #282828;
+    height:40px;
+    background:#1c1c1c;
+    color:#fff;
+    transition:all .5s;
+}
+.input_text textarea{
+    margin-top:2%;
+    border:1px solid #282828;
+    background:#1c1c1c;
+    color:#fff;
+    transition:all .5s;
+}
+
+.input_text>input:hover , .input_text textarea:hover{
+    border-color: #6e6e6e;
+    transition:all .5s;
+}
+.WeDivText p {
+    color: #7f7f7f;
+}
+.WeDivText h4 a {
+    color: #7f7f7f;
+}
+
+.input_text a{
+    background:#1c1c1c;
+    width:35%;
+    border:1px solid #282828;
+    border-radius:1px;
+    color:#fff;
+    transition:all .5s;
+    display: block;
+}
+.input_text a:hover{
+    border-color: #3b3b3b;
+    background:#3b3b3b;
+    color:#fff;
+    transition:all .5s;
+}
+.classHiddenDiv{
+    display:none;
+}
+
+.particles-js-canvas-el{ opacity:.5}
+
+#counterBgdx{ opacity:.5;position:absolute; width:100%; height:100%}.singlescreen #counterBgdx{ display:none}
+
+
+
+/*********************** animated动画 ************************/
+.listDivD , .fuwuziti, .listProText , .listProPicText , .GuanYuDiv,.TuanDuiDiv,.TuanDuiTitle,.NewsDiv,.NewsUl,.NewsPicDiv,.HeZuoDiv,.HeZuoTitle1,.HeZuoTitle2,.LianXiWoMen,.GuanYuShuZi{
+    display: none;
+}
+.slideInUp1 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+.slideInUp2 {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+.slideInUp3 {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+.slideInUp4 {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+.slideInUp5 {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+.slideInUp6 {
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+.slideInUp7 {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+.slideInUp8 {
+    -webkit-animation-delay: .9s;
+    animation-delay: .9s;
+}
+
+/*****************点击********************/
+.hideDiv111{
+    display:none;
+}
+
+/************** 固定 ******************/
+.fixed{
+    position:fixed;
+    bottom:3%;
+    right:3%;
+}
+.fixed>ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.fixed>ul > li {
+  position: relative;
+  display: block;
+}
+.fixed>ul > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color:#fff;
+  transition:all .8s;
+  border-radius:50%;
+}
+.fixed>ul > li > a:hover {
+  text-decoration: none;
+  background-color: #333;
+  transition:all .8s;
+  border-radius:50%;
+}
+@media screen and (max-width: 960px){
+    .fixed>ul .ibtn{
+        display:none;
+    }
+}
+@media screen and (min-width: 960px){
+    .fixed>ul>li:last-child{
+        display:none;
+    }
+}
+.fixed>ul>li:last-child{
+
+}
+
+
+
+
+.tanDiv{
+    width:100%;
+    height:100%;
+    background:  #fff;
+}
+.kDiv{
+    position:absolute;
+    right:-569px;
+    transition:all .5s;
+    top:-89%;
+    width:180px;
+    height:180px;
+    background:#fff;
+    color:#000;
+}
+.kDiv p{
+    padding:6px 25px;
+}
+#p1{
+    background: #333;
+    margin:0;
+    padding:17px 25px;
+    color:#fff;
+}
+#p1 a{
+    margin-left:55px;
+    padding:2px;
+    color:#fff;
+    transition:all .5s;
+    transform:rotate(45deg);
+}
+#p1 a:hover{
+    transition:all .5s;
+    transform:rotate(180deg);
+}
+#p2 {
+    border-bottom:1px solid #666;
+    background:#9e9e9e;
+    transition:all .5s;
+}
+#p2:hover{
+    background:#555;
+    color:#fff;
+    transition:all .5s;
+}
+
+#p2 span , #p3 span{
+    padding-right:8px;
+}
+
+.xDiv{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:5;
+    background:#3b3b3b;
+    opacity:0.9;
+    display:none;
+}
+.xDivSpan{
+    width:258px;
+    height:258px;
+    position:relative;
+    text-align: center;
+    margin:340px auto;
+}
+.xDivSpan img{
+    z-index:23;
+}
+.xDivSpan a{
+    z-index:23;
+    color:#000;
+    position:absolute;
+    top:3px;
+    right:3px;
+    transform:rotate(45deg);
+    transition:all .5s;
+}
+.xDivSpan a:hover{
+    transform:rotate(180deg);
+    transition:all .5s;
+}
+
+
+
